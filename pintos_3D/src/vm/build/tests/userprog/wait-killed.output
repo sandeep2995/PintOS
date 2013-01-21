@@ -1,0 +1,37 @@
+Copying tests/userprog/wait-killed to scratch partition...
+Copying tests/userprog/child-bad to scratch partition...
+Writing command line to /tmp/cP4zo9p6Sf.dsk...
+qemu -hda /tmp/cP4zo9p6Sf.dsk -hdb /tmp/KXFun35dT9.dsk -hdc /tmp/VE9ecT86Rb.dsk -hdd /tmp/sHUOi1Cewe.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run wait-killed
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+370 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 192 sector (96 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'wait-killed' into the file system...
+Putting 'child-bad' into the file system...
+Erasing ustar archive...
+Executing 'wait-killed':
+(wait-killed) begin
+(child-bad) begin
+child-bad: exit(-1)
+(wait-killed) wait(exec()) = -1
+(wait-killed) end
+wait-killed: exit(0)
+Execution of 'wait-killed' complete.
+Timer: 109 ticks
+Thread: 30 idle ticks, 78 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 116 reads, 390 writes
+hd1:0: 191 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 1117 characters output
+Keyboard: 0 keys pressed
+Exception: 6 page faults
+Powering off...

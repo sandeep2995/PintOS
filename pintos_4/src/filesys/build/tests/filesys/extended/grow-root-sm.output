@@ -1,0 +1,52 @@
+Copying tests/filesys/extended/grow-root-sm to scratch partition...
+Copying tests/filesys/extended/tar to scratch partition...
+Writing command line to /tmp/e1ezaP91KU.dsk...
+qemu -hda /tmp/e1ezaP91KU.dsk -hdb tmp.dsk -hdc /tmp/ogic0PMUI9.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run grow-root-sm
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  104,755,200 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 219 sector (109 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'grow-root-sm' into the file system...
+Putting 'tar' into the file system...
+Erasing ustar archive...
+Executing 'grow-root-sm':
+(grow-root-sm) begin
+(grow-root-sm) creating and checking "file0"
+(grow-root-sm) creating and checking "file1"
+(grow-root-sm) creating and checking "file2"
+(grow-root-sm) creating and checking "file3"
+(grow-root-sm) creating and checking "file4"
+(grow-root-sm) creating and checking "file5"
+(grow-root-sm) creating and checking "file6"
+(grow-root-sm) creating and checking "file7"
+(grow-root-sm) creating and checking "file8"
+(grow-root-sm) creating and checking "file9"
+(grow-root-sm) creating and checking "file10"
+(grow-root-sm) creating and checking "file11"
+(grow-root-sm) creating and checking "file12"
+(grow-root-sm) creating and checking "file13"
+(grow-root-sm) creating and checking "file14"
+(grow-root-sm) creating and checking "file15"
+(grow-root-sm) creating and checking "file16"
+(grow-root-sm) creating and checking "file17"
+(grow-root-sm) creating and checking "file18"
+(grow-root-sm) creating and checking "file19"
+(grow-root-sm) end
+grow-root-sm: exit(0)
+Execution of 'grow-root-sm' complete.
+Timer: 128 ticks
+Thread: 30 idle ticks, 76 kernel ticks, 22 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 2673 reads, 1071 writes
+hd1:0: 218 reads, 2 writes
+Console: 1855 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

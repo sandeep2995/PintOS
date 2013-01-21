@@ -1,0 +1,40 @@
+Copying tests/filesys/extended/grow-sparse to scratch partition...
+Copying tests/filesys/extended/tar to scratch partition...
+Writing command line to /tmp/YPY18ox3mx.dsk...
+qemu -hda /tmp/YPY18ox3mx.dsk -hdb tmp.dsk -hdc /tmp/R5teDwvWiD.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run grow-sparse
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 218 sector (109 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'grow-sparse' into the file system...
+Putting 'tar' into the file system...
+Erasing ustar archive...
+Executing 'grow-sparse':
+(grow-sparse) begin
+(grow-sparse) create "testfile"
+(grow-sparse) open "testfile"
+(grow-sparse) seek "testfile"
+(grow-sparse) write "testfile"
+(grow-sparse) close "testfile"
+(grow-sparse) open "testfile" for verification
+(grow-sparse) verified contents of "testfile"
+(grow-sparse) close "testfile"
+(grow-sparse) end
+grow-sparse: exit(0)
+Execution of 'grow-sparse' complete.
+Timer: 141 ticks
+Thread: 30 idle ticks, 78 kernel ticks, 33 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 1206 reads, 1478 writes
+hd1:0: 217 reads, 2 writes
+Console: 1216 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

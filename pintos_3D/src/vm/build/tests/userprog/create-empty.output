@@ -1,0 +1,33 @@
+Copying tests/userprog/create-empty to scratch partition...
+Writing command line to /tmp/6ULgmSMnsA.dsk...
+qemu -hda /tmp/6ULgmSMnsA.dsk -hdb /tmp/MWRB6Y9A6l.dsk -hdc /tmp/ZfYHmFF0QW.dsk -hdd /tmp/0GAEnEX18D.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run create-empty
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+370 pages available in user pool.
+Calibrating timer...  65,433,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'create-empty' into the file system...
+Erasing ustar archive...
+Executing 'create-empty':
+(create-empty) begin
+(create-empty) create(""): 0
+(create-empty) end
+create-empty: exit(0)
+Execution of 'create-empty' complete.
+Timer: 81 ticks
+Thread: 30 idle ticks, 50 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 63 reads, 202 writes
+hd1:0: 96 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 1034 characters output
+Keyboard: 0 keys pressed
+Exception: 3 page faults
+Powering off...

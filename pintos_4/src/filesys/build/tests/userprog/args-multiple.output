@@ -1,0 +1,37 @@
+Copying tests/userprog/args-multiple to scratch partition...
+Writing command line to /tmp/5e30ePPGPM.dsk...
+qemu -hda /tmp/5e30ePPGPM.dsk -hdb /tmp/pvT5qxV1V7.dsk -hdc /tmp/LZxpgG7mIB.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run 'args-multiple some arguments for you!'
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 96 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'args-multiple' into the file system...
+Erasing ustar archive...
+Executing 'args-multiple some arguments for you!':
+(args) begin
+(args) argc = 5
+(args) argv[0] = 'args-multiple'
+(args) argv[1] = 'some'
+(args) argv[2] = 'arguments'
+(args) argv[3] = 'for'
+(args) argv[4] = 'you!'
+(args) argv[5] = null
+(args) end
+args-multiple: exit(0)
+Execution of 'args-multiple some arguments for you!' complete.
+Timer: 82 ticks
+Thread: 30 idle ticks, 51 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 298 reads, 383 writes
+hd1:0: 95 reads, 2 writes
+Console: 1134 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

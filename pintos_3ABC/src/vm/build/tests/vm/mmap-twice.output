@@ -1,0 +1,28 @@
+Copying tests/vm/mmap-twice to scratch partition...
+Copying ../../tests/vm/sample.txt to scratch partition...
+Writing command line to /tmp/UMKDSphbWw.dsk...
+qemu -hda /tmp/UMKDSphbWw.dsk -hdb /tmp/D5RHFEWuIK.dsk -hdc /tmp/Ou29lb7KiX.dsk -hdd /tmp/1BjbL4Py0N.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run mmap-twice
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  78,540,800 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 103 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'mmap-twice' into the file system...
+Putting 'sample.txt' into the file system...
+Erasing ustar archive...
+Executing 'mmap-twice':
+(mmap-twice) begin
+(mmap-twice) open "sample.txt" #0
+(mmap-twice) mmap "sample.txt" #0 at 0x10000000
+(mmap-twice) open "sample.txt" #1
+(mmap-twice) mmap "sample.txt" #1 at 0x20000000
+(mmap-twice) compare mmap'd file 0 against data
+
+TIMEOUT after 60 seconds of host CPU time

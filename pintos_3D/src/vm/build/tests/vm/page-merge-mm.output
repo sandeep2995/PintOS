@@ -1,0 +1,52 @@
+Copying tests/vm/page-merge-mm to scratch partition...
+Copying tests/vm/child-qsort-mm to scratch partition...
+Writing command line to /tmp/AOaaDSugVF.dsk...
+qemu -hda /tmp/AOaaDSugVF.dsk -hdb /tmp/2CE7uBMyAQ.dsk -hdc /tmp/EAtB8TKU7Q.dsk -hdd /tmp/wyBiHt3jrJ.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run page-merge-mm
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+370 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 209 sector (104 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'page-merge-mm' into the file system...
+Putting 'child-qsort-mm' into the file system...
+Erasing ustar archive...
+Executing 'page-merge-mm':
+(page-merge-mm) begin
+(page-merge-mm) init
+(page-merge-mm) sort chunk 0
+child-qsort-mm: exit(-1)
+(page-merge-mm) sort chunk 1
+child-qsort-mm: exit(-1)
+(page-merge-mm) sort chunk 2
+child-qsort-mm: exit(-1)
+(page-merge-mm) sort chunk 3
+child-qsort-mm: exit(-1)
+(page-merge-mm) sort chunk 4
+child-qsort-mm: exit(-1)
+(page-merge-mm) sort chunk 5
+child-qsort-mm: exit(-1)
+(page-merge-mm) sort chunk 6
+child-qsort-mm: exit(-1)
+(page-merge-mm) sort chunk 7
+child-qsort-mm: exit(-1)
+(page-merge-mm) wait for child 0
+(page-merge-mm) wait for child 0: FAILED
+page-merge-mm: exit(1)
+Execution of 'page-merge-mm' complete.
+Timer: 1119 ticks
+Thread: 30 idle ticks, 80 kernel ticks, 1009 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 750 reads, 4552 writes
+hd1:0: 208 reads, 2 writes
+hd1:1: 2072 reads, 3304 writes
+Console: 1585 characters output
+Keyboard: 0 keys pressed
+Exception: 286 page faults
+Powering off...

@@ -1,0 +1,23 @@
+Writing command line to /tmp/wRS7g1twfr.dsk...
+squish-pty bochs -q
+========================================================================
+                       Bochs x86 Emulator 2.5.1
+              Built from SVN snapshot on January 6, 2012
+                  Compiled on Sep 30 2012 at 10:13:01
+========================================================================
+Kernel command line: -q run alarm-negative
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'alarm-negative':
+(alarm-negative) begin
+(alarm-negative) PASS
+(alarm-negative) end
+Execution of 'alarm-negative' complete.
+Timer: 40 ticks
+Thread: 1 idle ticks, 42 kernel ticks, 0 user ticks
+Console: 405 characters output
+Keyboard: 0 keys pressed
+Powering off...

@@ -1,0 +1,5 @@
+FAIL
+Kernel panic in file system extraction run: PANIC at ../../filesys/inode.c:745 in inode_allow_write(): assertion `inode->deny_write_cnt > 0' failed.
+Call stack: 0xc0121d88
+Translation of call stack:
+0xc0121d88: (unknown)

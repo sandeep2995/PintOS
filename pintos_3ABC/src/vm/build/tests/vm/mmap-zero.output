@@ -1,0 +1,24 @@
+Copying tests/vm/mmap-zero to scratch partition...
+Writing command line to /tmp/MR41tdAbRI.dsk...
+qemu -hda /tmp/MR41tdAbRI.dsk -hdb /tmp/m0gCgvechW.dsk -hdc /tmp/DbBQd7ydrQ.dsk -hdd /tmp/GekXwunXgt.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run mmap-zero
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  78,540,800 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 98 sector (49 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'mmap-zero' into the file system...
+Erasing ustar archive...
+Executing 'mmap-zero':
+(mmap-zero) begin
+(mmap-zero) create empty file "empty"
+(mmap-zero) open "empty"
+(mmap-zero) mmap "empty"
+
+TIMEOUT after 60 seconds of host CPU time

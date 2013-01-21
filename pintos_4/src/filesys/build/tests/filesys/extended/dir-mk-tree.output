@@ -1,0 +1,35 @@
+Copying tests/filesys/extended/dir-mk-tree to scratch partition...
+Copying tests/filesys/extended/tar to scratch partition...
+Writing command line to /tmp/yFMyTYgey7.dsk...
+qemu -hda /tmp/yFMyTYgey7.dsk -hdb tmp.dsk -hdc /tmp/TxThZTRyyP.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run dir-mk-tree
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 222 sector (111 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'dir-mk-tree' into the file system...
+Putting 'tar' into the file system...
+Erasing ustar archive...
+Executing 'dir-mk-tree':
+(dir-mk-tree) begin
+(dir-mk-tree) creating /0/0/0/0 through /3/2/2/3...
+(dir-mk-tree) open "/0/2/0/3"
+(dir-mk-tree) close "/0/2/0/3"
+(dir-mk-tree) end
+dir-mk-tree: exit(0)
+Execution of 'dir-mk-tree' complete.
+Timer: 229 ticks
+Thread: 30 idle ticks, 83 kernel ticks, 116 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 11551 reads, 2512 writes
+hd1:0: 221 reads, 2 writes
+Console: 1053 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

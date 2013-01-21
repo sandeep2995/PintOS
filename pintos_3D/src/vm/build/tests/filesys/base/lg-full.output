@@ -1,0 +1,39 @@
+Copying tests/filesys/base/lg-full to scratch partition...
+Writing command line to /tmp/gwMmSbxBwo.dsk...
+qemu -hda /tmp/gwMmSbxBwo.dsk -hdb /tmp/kpozoCdoRT.dsk -hdc /tmp/UAbjLUVJmQ.dsk -hdd /tmp/1iwk4vlvXr.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run lg-full
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+370 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 101 sector (50 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'lg-full' into the file system...
+Erasing ustar archive...
+Executing 'lg-full':
+(lg-full) begin
+(lg-full) create "quux"
+(lg-full) open "quux"
+(lg-full) writing "quux"
+(lg-full) close "quux"
+(lg-full) open "quux" for verification
+(lg-full) verified contents of "quux"
+(lg-full) close "quux"
+(lg-full) end
+lg-full: exit(0)
+Execution of 'lg-full' complete.
+Timer: 126 ticks
+Thread: 30 idle ticks, 52 kernel ticks, 44 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 239 reads, 506 writes
+hd1:0: 100 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 1170 characters output
+Keyboard: 0 keys pressed
+Exception: 3 page faults
+Powering off...

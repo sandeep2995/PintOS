@@ -1,0 +1,55 @@
+Copying tests/userprog/args-many to scratch partition...
+Writing command line to /tmp/9Is31fVd6o.dsk...
+qemu -hda /tmp/9Is31fVd6o.dsk -hdb /tmp/cy3CsAx7jP.dsk -hdc /tmp/1m18ydPwBU.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 96 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'args-many' into the file system...
+Erasing ustar archive...
+Executing 'args-many a b c d e f g h i j k l m n o p q r s t u v':
+(args) begin
+(args) argc = 23
+(args) argv[0] = 'args-many'
+(args) argv[1] = 'a'
+(args) argv[2] = 'b'
+(args) argv[3] = 'c'
+(args) argv[4] = 'd'
+(args) argv[5] = 'e'
+(args) argv[6] = 'f'
+(args) argv[7] = 'g'
+(args) argv[8] = 'h'
+(args) argv[9] = 'i'
+(args) argv[10] = 'j'
+(args) argv[11] = 'k'
+(args) argv[12] = 'l'
+(args) argv[13] = 'm'
+(args) argv[14] = 'n'
+(args) argv[15] = 'o'
+(args) argv[16] = 'p'
+(args) argv[17] = 'q'
+(args) argv[18] = 'r'
+(args) argv[19] = 's'
+(args) argv[20] = 't'
+(args) argv[21] = 'u'
+(args) argv[22] = 'v'
+(args) argv[23] = null
+(args) end
+args-many: exit(0)
+Execution of 'args-many a b c d e f g h i j k l m n o p q r s t u v' complete.
+Timer: 86 ticks
+Thread: 30 idle ticks, 54 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 298 reads, 383 writes
+hd1:0: 95 reads, 2 writes
+Console: 1547 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

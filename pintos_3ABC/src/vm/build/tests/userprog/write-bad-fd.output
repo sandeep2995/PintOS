@@ -1,0 +1,32 @@
+Copying tests/userprog/write-bad-fd to scratch partition...
+Writing command line to /tmp/Ur4ImVviyV.dsk...
+qemu -hda /tmp/Ur4ImVviyV.dsk -hdb /tmp/XhyfwEcv9C.dsk -hdc /tmp/5JKH3A8nwc.dsk -hdd /tmp/hetCi0GDi4.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run write-bad-fd
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'write-bad-fd' into the file system...
+Erasing ustar archive...
+Executing 'write-bad-fd':
+(write-bad-fd) begin
+(write-bad-fd) end
+write-bad-fd: exit(0)
+Execution of 'write-bad-fd' complete.
+Timer: 78 ticks
+Thread: 30 idle ticks, 48 kernel ticks, 0 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 59 reads, 198 writes
+hd1:0: 96 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 1006 characters output
+Keyboard: 0 keys pressed
+Exception: 3 page faults
+Powering off...

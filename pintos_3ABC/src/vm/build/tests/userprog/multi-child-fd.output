@@ -1,0 +1,42 @@
+Copying tests/userprog/multi-child-fd to scratch partition...
+Copying ../../tests/userprog/sample.txt to scratch partition...
+Copying tests/userprog/child-close to scratch partition...
+Writing command line to /tmp/L2QZdTjPi1.dsk...
+qemu -hda /tmp/L2QZdTjPi1.dsk -hdb /tmp/AlIqFNfWQl.dsk -hdc /tmp/Eu6FxuJ17E.dsk -hdd /tmp/m68zmA25AS.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run multi-child-fd
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 207 sector (103 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'multi-child-fd' into the file system...
+Putting 'sample.txt' into the file system...
+Putting 'child-close' into the file system...
+Erasing ustar archive...
+Executing 'multi-child-fd':
+(multi-child-fd) begin
+(multi-child-fd) open "sample.txt"
+(child-close) begin
+(child-close) end
+child-close: exit(0)
+(multi-child-fd) wait(exec()) = 0
+(multi-child-fd) verified contents of "sample.txt"
+(multi-child-fd) end
+multi-child-fd: exit(0)
+Execution of 'multi-child-fd' complete.
+Timer: 114 ticks
+Thread: 30 idle ticks, 82 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 169 reads, 422 writes
+hd1:0: 206 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 1295 characters output
+Keyboard: 0 keys pressed
+Exception: 5 page faults
+Powering off...

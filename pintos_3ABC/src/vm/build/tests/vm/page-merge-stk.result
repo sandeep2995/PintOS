@@ -1,0 +1,2 @@
+FAIL
+run: exec "child-qsort buf0": FAILED

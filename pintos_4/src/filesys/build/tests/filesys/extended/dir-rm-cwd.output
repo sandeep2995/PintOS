@@ -1,0 +1,66 @@
+Copying tests/filesys/extended/dir-rm-cwd to scratch partition...
+Copying tests/filesys/extended/tar to scratch partition...
+Writing command line to /tmp/0v3xmxwbPB.dsk...
+qemu -hda /tmp/0v3xmxwbPB.dsk -hdb tmp.dsk -hdc /tmp/0q1GLyAqv1.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run dir-rm-cwd
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 222 sector (111 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'dir-rm-cwd' into the file system...
+Putting 'tar' into the file system...
+Erasing ustar archive...
+Executing 'dir-rm-cwd':
+(dir-rm-cwd) begin
+(dir-rm-cwd) open "/"
+(dir-rm-cwd) mkdir "a"
+(dir-rm-cwd) open "/a"
+(dir-rm-cwd) verify "/a" is empty
+(dir-rm-cwd) "/" and "/a" must have different inumbers
+(dir-rm-cwd) chdir "a"
+(dir-rm-cwd) try to remove "/a"
+(dir-rm-cwd) remove failed
+(dir-rm-cwd) try to remove "../a" (must fail)
+(dir-rm-cwd) try to remove ".././a" (must fail)
+(dir-rm-cwd) try to remove "/./a" (must fail)
+(dir-rm-cwd) open "/a"
+(dir-rm-cwd) open "."
+(dir-rm-cwd) "/a" and "." must have same inumber
+(dir-rm-cwd) "/" and "/a" must have different inumbers
+(dir-rm-cwd) chdir "/a"
+(dir-rm-cwd) open "."
+(dir-rm-cwd) "." must have same inumber as before
+(dir-rm-cwd) chdir "/"
+(dir-rm-cwd) try to remove "a" (must fail: still open)
+(dir-rm-cwd) verify "/a" is empty
+(dir-rm-cwd) end
+dir-rm-cwd: exit(0)
+Page fault at 0x18: not present error reading page in kernel context.
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0xc010dc1f
+ cr2=00000018 error=00000000
+ eax=00000004 ebx=c012002c ecx=c0121070 edx=00000004
+ esi=c011d494 edi=c002f0ac esp=c0121070 ebp=c0121e74
+ cs=0008 ds=0010 es=0010 ss=16e5
+Kernel PANIC at ../../userprog/exception.c:101 in kill(): Kernel bug - unexpected interrupt in kernel
+Call stack: 0xc0121d78Page fault at 0x65: not present error reading page in kernel context.
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0xc0105e0f
+ cr2=00000065 error=00000000
+ eax=00000065 ebx=00000065 ecx=c0121ca4 edx=000003d4
+ esi=c0110106 edi=c0111cb9 esp=c0111423 ebp=c0121d38
+ cs=0008 ds=0010 es=0010 ss=1d78
+Kernel PANIC recursion at ../../userprog/exception.c:101 in kill().
+Timer: 124 ticks
+Thread: 30 idle ticks, 90 kernel ticks, 4 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 821 reads, 892 writes
+hd1:0: 221 reads, 2 writes
+Console: 2416 characters output
+Keyboard: 0 keys pressed
+Exception: 2 page faults
+Powering off...

@@ -1,0 +1,36 @@
+Copying tests/vm/page-merge-seq to scratch partition...
+Copying tests/vm/child-sort to scratch partition...
+Writing command line to /tmp/kyyjNUbOfk.dsk...
+qemu -hda /tmp/kyyjNUbOfk.dsk -hdb /tmp/uAUbfYBz4H.dsk -hdc /tmp/6FRzJ3Bzyj.dsk -hdd /tmp/NUOyUysXnv.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run page-merge-seq
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 202 sector (101 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'page-merge-seq' into the file system...
+Putting 'child-sort' into the file system...
+Erasing ustar archive...
+Executing 'page-merge-seq':
+(page-merge-seq) begin
+(page-merge-seq) init
+(page-merge-seq) sort chunk 0
+(page-merge-seq) exec "child-sort buffer": FAILED
+page-merge-seq: exit(1)
+Execution of 'page-merge-seq' complete.
+Timer: 148 ticks
+Thread: 30 idle ticks, 78 kernel ticks, 40 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 124 reads, 666 writes
+hd1:0: 201 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 1152 characters output
+Keyboard: 0 keys pressed
+Exception: 3 page faults
+Powering off...

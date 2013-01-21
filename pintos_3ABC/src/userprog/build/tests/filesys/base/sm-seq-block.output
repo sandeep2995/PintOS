@@ -1,0 +1,37 @@
+Copying tests/filesys/base/sm-seq-block to scratch partition...
+Writing command line to /tmp/Q5jna5e4jj.dsk...
+qemu -hda /tmp/Q5jna5e4jj.dsk -hdb /tmp/4ryFDGJgA8.dsk -hdc /tmp/Pdl27nUvME.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run sm-seq-block
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 101 sector (50 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'sm-seq-block' into the file system...
+Erasing ustar archive...
+Executing 'sm-seq-block':
+(sm-seq-block) begin
+(sm-seq-block) create "noodle"
+(sm-seq-block) open "noodle"
+(sm-seq-block) writing "noodle"
+(sm-seq-block) close "noodle"
+(sm-seq-block) open "noodle" for verification
+(sm-seq-block) verified contents of "noodle"
+(sm-seq-block) close "noodle"
+(sm-seq-block) end
+sm-seq-block: exit(0)
+Execution of 'sm-seq-block' complete.
+Timer: 88 ticks
+Thread: 30 idle ticks, 53 kernel ticks, 5 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 124 reads, 245 writes
+hd1:0: 100 reads, 2 writes
+Console: 1145 characters output
+Keyboard: 0 keys pressed
+Exception: 3 page faults
+Powering off...

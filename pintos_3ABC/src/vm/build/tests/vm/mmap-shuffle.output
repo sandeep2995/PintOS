@@ -1,0 +1,24 @@
+Copying tests/vm/mmap-shuffle to scratch partition...
+Writing command line to /tmp/ta6TewgAoP.dsk...
+qemu -hda /tmp/ta6TewgAoP.dsk -hdb /tmp/0qVKGPtZWn.dsk -hdc /tmp/zzkXWB75vt.dsk -hdd /tmp/TK0c1lV4eV.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run mmap-shuffle
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  78,540,800 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 107 sector (53 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'mmap-shuffle' into the file system...
+Erasing ustar archive...
+Executing 'mmap-shuffle':
+(mmap-shuffle) begin
+(mmap-shuffle) create "buffer"
+(mmap-shuffle) open "buffer"
+(mmap-shuffle) mmap "buffer"
+
+TIMEOUT after 600 seconds of host CPU time

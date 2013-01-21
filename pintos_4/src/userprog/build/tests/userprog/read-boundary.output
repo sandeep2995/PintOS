@@ -1,0 +1,33 @@
+Copying tests/userprog/read-boundary to scratch partition...
+Copying ../../tests/userprog/sample.txt to scratch partition...
+Writing command line to /tmp/CwYgH0pN6q.dsk...
+qemu -hda /tmp/CwYgH0pN6q.dsk -hdb /tmp/6tgabbT3CW.dsk -hdc /tmp/J9GSDtNWN7.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run read-boundary
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 153 sector (76 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 103 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'read-boundary' into the file system...
+Putting 'sample.txt' into the file system...
+Erasing ustar archive...
+Executing 'read-boundary':
+(read-boundary) begin
+(read-boundary) open "sample.txt"
+(read-boundary) end
+read-boundary: exit(0)
+Execution of 'read-boundary' complete.
+Timer: 72 ticks
+Thread: 30 idle ticks, 41 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 287 reads, 214 writes
+hd1:0: 102 reads, 2 writes
+Console: 988 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

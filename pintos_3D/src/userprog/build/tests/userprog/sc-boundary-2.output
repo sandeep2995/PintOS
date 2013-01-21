@@ -1,0 +1,29 @@
+Copying tests/userprog/sc-boundary-2 to scratch partition...
+Writing command line to /tmp/2WAyRrv2gl.dsk...
+qemu -hda /tmp/2WAyRrv2gl.dsk -hdb /tmp/BfZ8yIdiI5.dsk -hdc /tmp/vL46tSRhan.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run sc-boundary-2
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 99 sector (49 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'sc-boundary-2' into the file system...
+Erasing ustar archive...
+Executing 'sc-boundary-2':
+(sc-boundary-2) begin
+sc-boundary-2: exit(67)
+Execution of 'sc-boundary-2' complete.
+Timer: 81 ticks
+Thread: 30 idle ticks, 51 kernel ticks, 0 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 59 reads, 202 writes
+hd1:0: 98 reads, 2 writes
+Console: 887 characters output
+Keyboard: 0 keys pressed
+Exception: 4 page faults
+Powering off...

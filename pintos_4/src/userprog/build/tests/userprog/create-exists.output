@@ -1,0 +1,35 @@
+Copying tests/userprog/create-exists to scratch partition...
+Writing command line to /tmp/8aHy6BrVEt.dsk...
+qemu -hda /tmp/8aHy6BrVEt.dsk -hdb /tmp/ygOPxZXgtg.dsk -hdc /tmp/Iwha8W22DW.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run create-exists
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 153 sector (76 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'create-exists' into the file system...
+Erasing ustar archive...
+Executing 'create-exists':
+(create-exists) begin
+(create-exists) create quux.dat
+(create-exists) create warble.dat
+(create-exists) try to re-create quux.dat
+(create-exists) create baffle.dat
+(create-exists) try to re-create quux.dat
+(create-exists) end
+create-exists: exit(0)
+Execution of 'create-exists' complete.
+Timer: 72 ticks
+Thread: 30 idle ticks, 40 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 315 reads, 220 writes
+hd1:0: 96 reads, 2 writes
+Console: 1091 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

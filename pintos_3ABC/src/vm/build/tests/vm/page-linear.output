@@ -1,0 +1,22 @@
+Copying tests/vm/page-linear to scratch partition...
+Writing command line to /tmp/uPv3BM6VH5.dsk...
+qemu -hda /tmp/uPv3BM6VH5.dsk -hdb /tmp/95sfdsHc7H.dsk -hdc /tmp/FZ7gSZYm6z.dsk -hdd /tmp/bfjYip1TFj.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run page-linear
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 103 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'page-linear' into the file system...
+Erasing ustar archive...
+Executing 'page-linear':
+(page-linear) begin
+(page-linear) initialize
+
+TIMEOUT after 300 seconds of host CPU time

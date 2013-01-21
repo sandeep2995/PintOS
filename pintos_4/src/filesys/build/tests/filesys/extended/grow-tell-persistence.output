@@ -1,0 +1,31 @@
+Writing command line to /tmp/3um8HOvZKd.dsk...
+qemu -hda /tmp/3um8HOvZKd.dsk -hdb tmp.dsk -hdc /tmp/dTNkKITN1U.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q run 'tar fs.tar /' append fs.tar
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 2,048 sector (1024 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Boot complete.
+Executing 'tar fs.tar /':
+tar: exit(-1)
+Kernel PANIC at ../../filesys/inode.c:745 in inode_allow_write(): assertion `inode->deny_write_cnt > 0' failed.
+Call stack: 0xc0121d88Page fault at 0x2e9: not present error reading page in kernel context.
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0xc0105e0f
+ cr2=000002e9 error=00000000
+ eax=000002e9 ebx=000002e9 ecx=c0121cb4 edx=000003d4
+ esi=c0110237 edi=c0112045 esp=c0111423 ebp=c0121d48
+ cs=0008 ds=0010 es=0010 ss=1d88
+Kernel PANIC recursion at ../../userprog/exception.c:101 in kill().
+Timer: 55 ticks
+Thread: 30 idle ticks, 23 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 103 reads, 7 writes
+hd1:0: 0 reads, 0 writes
+Console: 1156 characters output
+Keyboard: 0 keys pressed
+Exception: 2 page faults
+Powering off...
+Copying tests/filesys/extended/grow-tell.tar out of /tmp/dTNkKITN1U.dsk...

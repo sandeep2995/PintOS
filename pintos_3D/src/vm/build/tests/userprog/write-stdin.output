@@ -1,0 +1,32 @@
+Copying tests/userprog/write-stdin to scratch partition...
+Writing command line to /tmp/UqmS5VYN3b.dsk...
+qemu -hda /tmp/UqmS5VYN3b.dsk -hdb /tmp/NmBwbJCaig.dsk -hdc /tmp/fr2HvmII3I.dsk -hdd /tmp/1CjicRnP2w.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run write-stdin
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+370 pages available in user pool.
+Calibrating timer...  65,433,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'write-stdin' into the file system...
+Erasing ustar archive...
+Executing 'write-stdin':
+(write-stdin) begin
+(write-stdin) end
+write-stdin: exit(0)
+Execution of 'write-stdin' complete.
+Timer: 81 ticks
+Thread: 30 idle ticks, 51 kernel ticks, 0 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 59 reads, 198 writes
+hd1:0: 96 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 998 characters output
+Keyboard: 0 keys pressed
+Exception: 3 page faults
+Powering off...

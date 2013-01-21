@@ -1,0 +1,36 @@
+Copying tests/filesys/extended/dir-mkdir to scratch partition...
+Copying tests/filesys/extended/tar to scratch partition...
+Writing command line to /tmp/G6uD9UI6ic.dsk...
+qemu -hda /tmp/G6uD9UI6ic.dsk -hdb tmp.dsk -hdc /tmp/lFmORKRxHB.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run dir-mkdir
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 218 sector (109 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'dir-mkdir' into the file system...
+Putting 'tar' into the file system...
+Erasing ustar archive...
+Executing 'dir-mkdir':
+(dir-mkdir) begin
+(dir-mkdir) mkdir "a"
+(dir-mkdir) create "a/b"
+(dir-mkdir) chdir "a"
+(dir-mkdir) open "b"
+(dir-mkdir) end
+dir-mkdir: exit(0)
+Execution of 'dir-mkdir' complete.
+Timer: 106 ticks
+Thread: 30 idle ticks, 75 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 676 reads, 884 writes
+hd1:0: 217 reads, 2 writes
+Console: 1011 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

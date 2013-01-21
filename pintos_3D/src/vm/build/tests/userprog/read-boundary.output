@@ -1,0 +1,35 @@
+Copying tests/userprog/read-boundary to scratch partition...
+Copying ../../tests/userprog/sample.txt to scratch partition...
+Writing command line to /tmp/scjgYsamvF.dsk...
+qemu -hda /tmp/scjgYsamvF.dsk -hdb /tmp/rN18babyP9.dsk -hdc /tmp/PyjNwQLZjA.dsk -hdd /tmp/b7jRhniiN1.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run read-boundary
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+370 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 103 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'read-boundary' into the file system...
+Putting 'sample.txt' into the file system...
+Erasing ustar archive...
+Executing 'read-boundary':
+(read-boundary) begin
+(read-boundary) open "sample.txt"
+(read-boundary) end
+read-boundary: exit(0)
+Execution of 'read-boundary' complete.
+Timer: 81 ticks
+Thread: 30 idle ticks, 51 kernel ticks, 0 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 99 reads, 212 writes
+hd1:0: 102 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 1094 characters output
+Keyboard: 0 keys pressed
+Exception: 5 page faults
+Powering off...

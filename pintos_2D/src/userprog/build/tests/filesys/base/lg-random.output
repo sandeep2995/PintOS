@@ -1,0 +1,35 @@
+Copying tests/filesys/base/lg-random to scratch partition...
+Writing command line to /tmp/LAtUSrZdTU.dsk...
+qemu -hda /tmp/LAtUSrZdTU.dsk -hdb /tmp/kVW0Luf4en.dsk -hdc /tmp/7beX4hmemN.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run lg-random
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 103 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'lg-random' into the file system...
+Erasing ustar archive...
+Executing 'lg-random':
+(lg-random) begin
+(lg-random) create "bazzle"
+(lg-random) open "bazzle"
+(lg-random) write "bazzle" in random order
+(lg-random) read "bazzle" in random order
+(lg-random) close "bazzle"
+(lg-random) end
+lg-random: exit(0)
+Execution of 'lg-random' complete.
+Timer: 115 ticks
+Thread: 30 idle ticks, 50 kernel ticks, 35 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 237 reads, 514 writes
+hd1:0: 102 reads, 2 writes
+Console: 1049 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

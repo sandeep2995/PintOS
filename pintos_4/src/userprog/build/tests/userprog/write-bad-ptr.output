@@ -1,0 +1,32 @@
+Copying tests/userprog/write-bad-ptr to scratch partition...
+Copying ../../tests/userprog/sample.txt to scratch partition...
+Writing command line to /tmp/zXzvO8R6oL.dsk...
+qemu -hda /tmp/zXzvO8R6oL.dsk -hdb /tmp/6xSJGQYpVT.dsk -hdc /tmp/d2H0yfDh44.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run write-bad-ptr
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 153 sector (76 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 99 sector (49 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'write-bad-ptr' into the file system...
+Putting 'sample.txt' into the file system...
+Erasing ustar archive...
+Executing 'write-bad-ptr':
+(write-bad-ptr) begin
+(write-bad-ptr) open "sample.txt"
+write-bad-ptr: exit(-1)
+Execution of 'write-bad-ptr' complete.
+Timer: 73 ticks
+Thread: 30 idle ticks, 42 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 262 reads, 206 writes
+hd1:0: 98 reads, 2 writes
+Console: 967 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

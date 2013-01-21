@@ -1,0 +1,31 @@
+Copying tests/userprog/create-long to scratch partition...
+Writing command line to /tmp/fa1ecM1O8Z.dsk...
+qemu -hda /tmp/fa1ecM1O8Z.dsk -hdb /tmp/uuLSpSxzXa.dsk -hdc /tmp/PY2Ohg1B1X.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run create-long
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'create-long' into the file system...
+Erasing ustar archive...
+Executing 'create-long':
+(create-long) begin
+(create-long) create("x..."): 0
+(create-long) end
+create-long: exit(0)
+Execution of 'create-long' complete.
+Timer: 84 ticks
+Thread: 30 idle ticks, 51 kernel ticks, 3 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 304 reads, 394 writes
+hd1:0: 96 reads, 2 writes
+Console: 925 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

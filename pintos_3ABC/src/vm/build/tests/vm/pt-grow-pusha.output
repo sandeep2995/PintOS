@@ -1,0 +1,21 @@
+Copying tests/vm/pt-grow-pusha to scratch partition...
+Writing command line to /tmp/jehTrAJyEY.dsk...
+qemu -hda /tmp/jehTrAJyEY.dsk -hdb /tmp/lo9pakcMOQ.dsk -hdc /tmp/OAQDEWBNf2.dsk -hdd /tmp/OpK5A0dJk1.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run pt-grow-pusha
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+372 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'pt-grow-pusha' into the file system...
+Erasing ustar archive...
+Executing 'pt-grow-pusha':
+(pt-grow-pusha) begin
+
+TIMEOUT after 60 seconds of host CPU time

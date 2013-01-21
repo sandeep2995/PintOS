@@ -1,0 +1,31 @@
+Copying tests/userprog/create-bound to scratch partition...
+Writing command line to /tmp/vuX7osxLTn.dsk...
+qemu -hda /tmp/vuX7osxLTn.dsk -hdb /tmp/UCLJboskFX.dsk -hdc /tmp/GICpvIHV9x.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run create-bound
+Pintos booting with 4,096 kB RAM...
+372 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 153 sector (76 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 99 sector (49 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'create-bound' into the file system...
+Erasing ustar archive...
+Executing 'create-bound':
+(create-bound) begin
+(create-bound) create("quux.dat"): 1
+(create-bound) end
+create-bound: exit(0)
+Execution of 'create-bound' complete.
+Timer: 73 ticks
+Thread: 30 idle ticks, 42 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 259 reads, 208 writes
+hd1:0: 98 reads, 2 writes
+Console: 937 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

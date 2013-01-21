@@ -1,0 +1,5 @@
+FAIL
+Kernel panic in run: PANIC at ../../threads/thread.c:309 in thread_current(): assertion `t->status == THREAD_RUNNING' failed.
+Call stack: 0xc0163e18
+Translation of call stack:
+0xc0163e18: (unknown)

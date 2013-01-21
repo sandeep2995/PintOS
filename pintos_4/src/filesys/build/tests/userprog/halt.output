@@ -1,0 +1,27 @@
+Copying tests/userprog/halt to scratch partition...
+Writing command line to /tmp/lvDOu0WhDa.dsk...
+qemu -hda /tmp/lvDOu0WhDa.dsk -hdb /tmp/oKkFhmqOjB.dsk -hdc /tmp/FHVvyGkm2Z.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run halt
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  104,755,200 loops/s.
+hd0:0: detected 161 sector (80 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'halt' into the file system...
+Erasing ustar archive...
+Executing 'halt':
+(halt) begin
+Timer: 79 ticks
+Thread: 30 idle ticks, 49 kernel ticks, 0 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 300 reads, 387 writes
+hd1:0: 96 reads, 2 writes
+Console: 789 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

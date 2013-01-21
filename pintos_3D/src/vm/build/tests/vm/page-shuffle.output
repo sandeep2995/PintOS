@@ -1,0 +1,43 @@
+Copying tests/vm/page-shuffle to scratch partition...
+Writing command line to /tmp/AmgZRioak9.dsk...
+qemu -hda /tmp/AmgZRioak9.dsk -hdb /tmp/pBeH2gS1Wd.dsk -hdc /tmp/3ZBZFJW5rS.dsk -hdd /tmp/PLTXruJ9rV.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f extract run page-shuffle
+Pintos booting with 4,096 kB RAM...
+371 pages available in kernel pool.
+370 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 106 sector (53 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch disk into file system...
+Putting 'page-shuffle' into the file system...
+Erasing ustar archive...
+Executing 'page-shuffle':
+(page-shuffle) begin
+(page-shuffle) init: cksum=3115322833
+(page-shuffle) shuffle 0: cksum=1691062564
+(page-shuffle) shuffle 1: cksum=1973575879
+(page-shuffle) shuffle 2: cksum=1647619479
+(page-shuffle) shuffle 3: cksum=96566261
+(page-shuffle) shuffle 4: cksum=3885786467
+(page-shuffle) shuffle 5: cksum=3022003332
+(page-shuffle) shuffle 6: cksum=3614934266
+(page-shuffle) shuffle 7: cksum=2704001777
+(page-shuffle) shuffle 8: cksum=735775156
+(page-shuffle) shuffle 9: cksum=1864109763
+(page-shuffle) end
+page-shuffle: exit(0)
+Execution of 'page-shuffle' complete.
+Timer: 132 ticks
+Thread: 30 idle ticks, 56 kernel ticks, 46 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 62 reads, 216 writes
+hd1:0: 105 reads, 2 writes
+hd1:1: 0 reads, 0 writes
+Console: 1475 characters output
+Keyboard: 0 keys pressed
+Exception: 3 page faults
+Powering off...
